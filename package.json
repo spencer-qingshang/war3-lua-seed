@@ -1,0 +1,28 @@
+{
+  "name": "wc3-lua-seed",
+  "version": "0.3.0",
+  "description": "Warcraft 3 + lua scripting map seed",
+  "main": "bundler.js",
+  "scripts": {
+    "start": "npm run watch",
+    "bundle": "node bundler.js",
+    "bundle.prod": "set BUNDLING_ENV=production && npm run bundle",
+    "bundle.release": "set BUNDLING_ENV=release && npm run bundle",
+    "watch": "nodemon nodemon.json",
+    "watch.prod": "set BUNDLING_ENV=production && npm run watch",
+    "watch.release": "set BUNDLING_ENV=release && npm run watch"
+  },
+  "keywords": [],
+  "author": "Vitor B. B.",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6",
+    "luabundle": "^1.6.0",
+    "luamin": "^1.0.4",
+    "ncp": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
